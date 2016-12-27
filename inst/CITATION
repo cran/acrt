@@ -17,5 +17,5 @@ author = "P{\"o}tscher, B.M., and Preinerstorfer, D.",
 journal = "Working Paper",
 year = "2016",
 header = "and to refer to the following article for a description of the algorithms and the underlying theory:", 
-textVersion = paste("P{\"o}tscher, B.M., and Preinerstorfer, D. (2016).", "Controlling the size of autocorrelation robust tests.", "Working Paper.")
+textVersion = paste("P{\"o}tscher, B.M., and Preinerstorfer, D. (2016).", "Controlling the size of autocorrelation robust tests.", "arXiv:1612.06127")
 )

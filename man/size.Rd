@@ -149,7 +149,8 @@ Stage 2 of (A2). Default is \code{control.2 = list("reltol" = N2^(-.5),
  
 \item{cores}{The number of CPU cores used in the (parallelized)
 computation of the Monte-Carlo
-approximations in (A2). Default is 1.}
+approximations in (A2). Default is 1. Parallelized computation is enabled only
+if the compiler used to build \pkg{acrt} supports OpenMP.}
  
 \item{margin}{The restrictions imposed on the partial autocorrelation 
 coefficients. \code{margin} is an \code{ar.order.max}-dimensional vector of 
@@ -250,6 +251,7 @@ Statistics}, \strong{36} 134-138
 
 \enc{Pötscher}{Poetscher}, B.M. and Preinerstorfer, D. (2016). Controlling
 the size of autocorrelation robust tests.
+\url{https://arxiv.org/abs/1612.06127/}
 }
 
 \seealso{

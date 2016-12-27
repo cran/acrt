@@ -66,7 +66,7 @@ heteroskedasticity and autocorrelation consistent covariance matrix.
 \emph{Econometrica}, \strong{55} 703-708.
 
 \enc{Pötscher}{Poetscher}, B.M. and Preinerstorfer, D. (2016). Controlling the 
-size of autocorrelation robust tests.
+size of autocorrelation robust tests. \url{https://arxiv.org/abs/1612.06127/}
 
 Preinerstorfer, D. and \enc{Pötscher}{Poetscher}, B. M. (2016). On size and 
 power of heteroskedasticity and autocorrelation robust tests. 

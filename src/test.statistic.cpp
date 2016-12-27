@@ -20,7 +20,9 @@
 #    http://www.r-project.org/Licenses/
 */
 
-#include <omp.h>
+#ifdef _OPENMP
+# include <omp.h>
+#endif
 #include <RcppEigen.h>
 
 // [[Rcpp::plugins(openmp)]]
@@ -39,8 +41,10 @@ Eigen::VectorXd ctest(Eigen::MatrixXd umat,
 int Nrep = umat.cols(), q = Bmat.rows();
 VectorXd testevals(Nrep);
 
+#ifdef _OPENMP
 omp_set_num_threads(cores);
-#pragma omp parallel for 
+#pragma omp parallel for
+#endif
 for(int i = 0; i < Nrep; i++){
 MatrixXd Wmat0 = Bmat * umat.col(i).asDiagonal();
 MatrixXd Wmat1(q, q);
